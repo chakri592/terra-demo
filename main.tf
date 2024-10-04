@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" {
-  iam=""
+  ami="ami-00f251754ac5da7f0"
   instance_type="t2.micro"
   tags={
         Name="ec2-terra"
