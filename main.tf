@@ -87,4 +87,11 @@ tags={
 Name="terra-ec2"
 }
 }
+terraform {
+  backend "s3" {
+    bucket = "mybucket-chakri-1"
+    key    = "pord/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
 
