@@ -77,7 +77,7 @@ resource "aws_key_pair" "deployer" {
 
 
 resource "aws_instance" "two"{
-ami=" "
+ami="ami-0fff1b9a61dec8a5f"
 key_name = aws_key_pair.deployer.key_name
 instance_type="t2.micro"
 #vpc_security_group_ids = [aws_default_security_group.default.id]
