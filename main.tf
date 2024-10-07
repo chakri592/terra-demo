@@ -103,7 +103,7 @@ resource "aws_key_pair" "deployer" {
 
 # EC2 Instance with Tomcat Installation
 resource "aws_instance" "two" {
-  ami                    = "ami-00f251754ac5da7f0"  # Replace with a valid Amazon Linux AMI ID
+  ami                    = "ami-0d1622042e957c247"  # Replace with a valid Amazon Linux AMI ID
   key_name               = aws_key_pair.deployer.key_name
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.one.id
